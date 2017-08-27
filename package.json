@@ -4,17 +4,23 @@
   "description": "practicing MEAN",
   "main": "main.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Justin Hu",
   "license": "ISC",
   "dependencies": {
-    "@uirouter/angular": "^1.0.0-beta.7",
     "angular": "^1.6.5",
+    "bootstrap": "^3.3.7",
     "express": "^4.15.4",
+    "jquery": "^3.2.1",
     "mongoose": "^4.11.8"
   },
   "devDependencies": {
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.5.5"
   }
 }
