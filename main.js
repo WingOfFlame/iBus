@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	$('#searchBar').submit(function () {
+	 /* fetch data*/
+	 return false;
+	});
+
 	$('#sideNav a').click(function (e) {
 		e.preventDefault()
 		$(this).tab('show')
@@ -10,6 +15,11 @@ $(document).ready(function(){
     $('#myNavbar').collapse('toggle')
 	});
 
+	$('.toggle').click(function() {
+	        $input = $( this );
+	        $target = $('#'+$input.attr('data-toggle'));
+	        $target.slideToggle();
+	    });
   var a = function myMap() {
   var mapCanvas = document.getElementById("map");
   var mapOptions = {

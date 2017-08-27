@@ -7,32 +7,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./main.js"></script>
-  <link rel="stylesheet" href="./style.css">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">iBus</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul id="topNav" class="nav navbar-nav">
-        <li class="active"><a href="#section1">Favourites</a></li>
-        <li><a href="#section2">Routes</a></li>
-        <li><a href="#section3">Stops</a></li>
-        <li><a href="#section4">Directions</a></li>
-        <li><a href="#section5">Settings</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <nav class="navbar navbar-inverse" role="navigation">
+
+      <div class="container-fluid">
+          <!-- add header -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!-- add search form -->
+              <form id="searchBar" class="navbar-form pull-left" role="search">
+                  <div class="input-group">
+                      <span class="input-group-btn">
+                          <button type="submit" class="btn btn-default">
+                              <span class="glyphicon glyphicon-search"></span>
+                          </button>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Search this site">
+                  </div>
+              </form>
+          </div>
+
+          <!-- add menu -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul id="topNav" class="nav navbar-nav">
+              <li class="active"><a href="#section1">Favourites</a></li>
+              <li><a href="#section2">Routes</a></li>
+              <li><a href="#section3">Stops</a></li>
+              <li><a href="#section4">Directions</a></li>
+              <li><a href="#section5">Settings</a></li>
+            </ul>
+          </div>
+      </div>
+  </nav>
 
 <div class="container-fluid">
   <div class="row content">
@@ -112,7 +127,22 @@
           </div>
 
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="section2">section2</div>
+        <div role="tabpanel" class="tab-pane fade" id="section2">
+          section2
+          <div class="panel list-group">
+ <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#menu">MESSAGES <span class="label label-info">5</span> <span class="glyphicon glyphicon-envelope pull-right"></span></a>
+ <div id="sm" class="sublinks collapse">
+  <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> inbox</a>
+  <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> sent</a>
+ </div>
+ <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu">TASKS <span class="glyphicon glyphicon-tag pull-right"></span></a>
+ <div id="sl" class="sublinks collapse">
+  <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> saved tasks</a>
+  <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> add new task</a>
+ </div>
+ <a href="#" class="list-group-item">ANOTHER LINK ...<span class="glyphicon glyphicon-stats pull-right"></span></a>
+</div>
+        </div>
         <div role="tabpanel" class="tab-pane fade" id="section3">section3</div>
         <div role="tabpanel" class="tab-pane fade" id="section4">section4</div>
         <div role="tabpanel" class="tab-pane fade" id="section5">section5</div>
